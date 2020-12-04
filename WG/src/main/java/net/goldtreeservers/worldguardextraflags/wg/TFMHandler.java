@@ -2,7 +2,6 @@ package net.goldtreeservers.worldguardextraflags.wg;
 
 import me.totalfreedom.totalfreedommod.TotalFreedomMod;
 import org.bukkit.Bukkit;
-import org.bukkit.command.CommandSender;
 import org.bukkit.plugin.Plugin;
 
 public class TFMHandler
@@ -25,8 +24,8 @@ public class TFMHandler
         return null;
     }
 
-    public static boolean isStaff(String name)
+    public static boolean isAdmin(String name)
     {
-        return getTFM().sl.getEntryByName(name) != null;
+        return getTFM().al.getEntryByName(name) != null;
     }
 }
